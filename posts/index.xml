@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My New Hugo Site</title>
+    <link>https://halimess.github.io/posts/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Apr 2021 23:12:15 +0900</lastBuildDate><atom:link href="https://halimess.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>개발 블로그 시작</title>
+      <link>https://halimess.github.io/posts/firstpage/</link>
+      <pubDate>Tue, 13 Apr 2021 23:12:15 +0900</pubDate>
+      
+      <guid>https://halimess.github.io/posts/firstpage/</guid>
+      <description>개발 블로그를 만들었다!
+Hugo 기반에 PaperMod theme을 적용해보았다.
+Hugo는 go 언어로 만들어진 정적 사이트를 쉽게 만들어 주는 도구이다. 기본 설정 이후에는 markdown으로 블로그 글을 포스팅할 수 있다.
+Github/Gitlab Pages, Amazon S3, Heroku 등 거의 모든 배포 도구로 배포할 수 있다.
+꾸준히 작성하여 나의 개발 자산을 늘리자! 😃</description>
+    </item>
+    
+  </channel>
+</rss>
