@@ -1,6 +1,6 @@
 baseURL: https://halimess.github.io/
 languageCode: en-us
-title: My New Hugo Site
+title: halimess 개발 블로그
 theme: "PaperMod"
 
 enableEmoji: true
@@ -49,7 +49,7 @@ params:
 
   
   label:
-    text: "Home"
+    text: "halimess"
     # icon: /apple-touch-icon.png
     # iconHeight: 35
 
@@ -84,18 +84,18 @@ menu:
       name: Search
       url: /search/
       weight: 20
-    - identifier: categories
-      name: Categories
-      url: /categories/
-      weight: 30
+    # - identifier: categories
+    #   name: Categories
+    #   url: /categories/
+    #   weight: 30
     - identifier: tags
       name: Tags
       url: /tags/
       weight: 40
-    # - identifier: example
-    #   name: example.org
-    #   url: https://example.org
-    #   weight: 30
+    # - identifier: github
+    #   name: github
+    #   url: https://github.com/halimess
+    #   weight: 50
 
 outputs:
   home:
