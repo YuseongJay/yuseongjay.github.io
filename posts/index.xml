@@ -6,7 +6,16 @@
     <description>Recent content in Posts on halimess 개발 블로그</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Apr 2021 23:12:15 +0900</lastBuildDate><atom:link href="https://halimess.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Apr 2021 02:19:32 +0900</lastBuildDate><atom:link href="https://halimess.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>책 내용 정리: Clean Architecture</title>
+      <link>https://halimess.github.io/posts/cleanarchitecture/</link>
+      <pubDate>Sat, 17 Apr 2021 02:19:32 +0900</pubDate>
+      
+      <guid>https://halimess.github.io/posts/cleanarchitecture/</guid>
+      <description>Clean Architecture 책에서 중요하다고 생각한 내용 정리</description>
+    </item>
+    
     <item>
       <title>개발 블로그 시작</title>
       <link>https://halimess.github.io/posts/firstpage/</link>
