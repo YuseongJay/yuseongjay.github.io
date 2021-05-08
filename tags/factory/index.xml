@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Factory on halimess 개발 블로그</title>
+    <link>https://halimess.github.io/tags/factory/</link>
+    <description>Recent content in Factory on halimess 개발 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Apr 2021 02:00:32 +0900</lastBuildDate><atom:link href="https://halimess.github.io/tags/factory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>책 내용 정리: Clean Architecture</title>
+      <link>https://halimess.github.io/posts/cleanarchitecture/</link>
+      <pubDate>Wed, 28 Apr 2021 02:00:32 +0900</pubDate>
+      
+      <guid>https://halimess.github.io/posts/cleanarchitecture/</guid>
+      <description>Clean Architecture 책에서 중요하다고 생각한 내용 정리</description>
+    </item>
+    
+  </channel>
+</rss>
