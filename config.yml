@@ -17,8 +17,8 @@ minify:
 
 params:
   env: production
-  title: ExampleSite
-  description: "ExampleSite description"
+  title: 아무 글
+  description: "내가 보려고 작성한 글"
   keywords: [Blog, Portfolio, PaperMod]
   author: halimess
   # images: 
