@@ -3,7 +3,10 @@ title: "책 내용 정리: Clean Architecture"
 date: 2021-04-28T02:00:32+09:00
 # weight: 1
 # aliases: ["/first"]
-tags: ["clean", "architecture", "book", "clean architecture"]
+tags: [
+    "clean", "architecture", "book", "clean architecture",
+    "pattern", "SOLID", "DI", "Facade", "Factory"
+]
 author: "halimess"
 # author: ["Me", "You"] # multiple authors
 showToc: true
