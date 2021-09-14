@@ -6,7 +6,16 @@
     <description>Recent content in Posts on halimess 개발 블로그</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Apr 2021 02:00:32 +0900</lastBuildDate><atom:link href="https://halimess.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Sep 2021 14:56:08 +0000</lastBuildDate><atom:link href="https://halimess.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS VPC 이론 공부</title>
+      <link>https://halimess.github.io/posts/aws/vpc/</link>
+      <pubDate>Tue, 14 Sep 2021 14:56:08 +0000</pubDate>
+      
+      <guid>https://halimess.github.io/posts/aws/vpc/</guid>
+      <description>Desc Text.</description>
+    </item>
+    
     <item>
       <title>책 내용 정리: Clean Architecture</title>
       <link>https://halimess.github.io/posts/cleanarchitecture/</link>

@@ -1,12 +1,121 @@
-<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>halimess 개발 블로그</title><meta name=keywords content="Blog,Portfolio,PaperMod"><meta name=description content="내가 보려고 작성한 글"><meta name=author content="halimess"><link rel=canonical href=https://halimess.github.io/><link crossorigin=anonymous href=/assets/css/stylesheet.min.b15591da31b4f827d6dc0b97cf931d21b01610305321ac220bf755cf6aade94e.css integrity="sha256-sVWR2jG0+CfW3AuXz5MdIbAWEDBTIawiC/dVz2qt6U4=" rel="preload stylesheet" as=style><link rel=icon href=https://halimess.github.io/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://halimess.github.io/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://halimess.github.io/favicon-32x32.png><link rel=apple-touch-icon href=https://halimess.github.io/apple-touch-icon.png><link rel=mask-icon href=https://halimess.github.io/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><meta name=generator content="Hugo 0.83.1"><link rel=alternate type=application/rss+xml href=https://halimess.github.io/index.xml><link rel=alternate type=application/json href=https://halimess.github.io/index.json><meta property="og:title" content="halimess 개발 블로그"><meta property="og:description" content="내가 보려고 작성한 글"><meta property="og:type" content="website"><meta property="og:url" content="https://halimess.github.io/"><meta property="og:site_name" content="아무 글"><meta name=twitter:card content="summary"><meta name=twitter:title content="halimess 개발 블로그"><meta name=twitter:description content="내가 보려고 작성한 글"><script type=application/ld+json>{"@context":"https://schema.org","@type":"Organization","name":"halimess 개발 블로그","url":"https://halimess.github.io/","description":"내가 보려고 작성한 글","thumbnailUrl":"https://halimess.github.io/favicon.ico","sameAs":[]}</script></head><body class=list id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script><noscript><style type=text/css>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:#1d1e20;--entry:#2e2e33;--primary:rgba(255, 255, 255, 0.84);--secondary:rgba(255, 255, 255, 0.56);--tertiary:rgba(255, 255, 255, 0.16);--content:rgba(255, 255, 255, 0.74);--hljs-bg:#2e2e33;--code-bg:#37383e;--border:#333}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><header class=header><nav class=nav><div class=logo><a href=https://halimess.github.io/ accesskey=h title="halimess (Alt + H)">halimess</a>
-<span class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></span></div><ul id=menu onscroll=menu_on_scroll()><li><a href=https://halimess.github.io/archives/ title=Archive><span>Archive</span></a></li><li><a href=https://halimess.github.io/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li><li><a href=https://halimess.github.io/tags/ title=Tags><span>Tags</span></a></li></ul></nav></header><main class=main><article class=first-entry><header class=entry-header><h2>책 내용 정리: Clean Architecture</h2></header><section class=entry-content><p>소개 1장. 설계와 아키텍처란? 설계랑 아키텍처는 같은 말이다.
-아키텍처는 고수준의 무언가, 설계는 저수준의 구조 혹은 결정사항을 의미할 때가 많지만, 이러한 구분은 무의미 저수준의 세부사항과 고수준의 구조는 소프트웨어 전체 설계의 구성 요소 고수준 -> 저수준으로 향하는 의사결정의 연속성만이 있을 뿐 소프트웨어 아키텍처의 목표 필요한 시스템을 만들고 유지보수하는 데 투입되는 인력을 최소화 즉, 설계 품질의 척도는 요구 사항을 만족시키는 데 드는 비용을 재는 척도 엉망진창이 되어가는 신호 시스템을 급하게 만들거나 결과물의 총량을 순전히 프로그래머 수만으로 결정하거나 코드와 설계의 구조를 깔끔하게 만들려는 생각을 전혀하지 않으면 파국이다…...</p></section><footer class=entry-footer>April 28, 2021&nbsp;·&nbsp;4 min&nbsp;·&nbsp;halimess</footer><a class=entry-link aria-label="post link to 책 내용 정리: Clean Architecture" href=https://halimess.github.io/posts/cleanarchitecture/></a></article><article class=post-entry><header class=entry-header><h2>개발 블로그 시작</h2></header><section class=entry-content><p>개발 블로그를 만들었다!
+<!doctype html><html lang=en dir=auto>
+<head><meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
+<title>halimess 개발 블로그</title>
+<meta name=keywords content="Blog,Portfolio,PaperMod">
+<meta name=description content="내가 보려고 작성한 글">
+<meta name=author content="halimess">
+<link rel=canonical href=https://halimess.github.io/>
+<link crossorigin=anonymous href=/assets/css/stylesheet.min.b15591da31b4f827d6dc0b97cf931d21b01610305321ac220bf755cf6aade94e.css integrity="sha256-sVWR2jG0+CfW3AuXz5MdIbAWEDBTIawiC/dVz2qt6U4=" rel="preload stylesheet" as=style>
+<link rel=icon href=https://halimess.github.io/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=https://halimess.github.io/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=https://halimess.github.io/favicon-32x32.png>
+<link rel=apple-touch-icon href=https://halimess.github.io/apple-touch-icon.png>
+<link rel=mask-icon href=https://halimess.github.io/safari-pinned-tab.svg>
+<meta name=theme-color content="#2e2e33">
+<meta name=msapplication-TileColor content="#2e2e33">
+<meta name=generator content="Hugo 0.88.1">
+<link rel=alternate type=application/rss+xml href=https://halimess.github.io/index.xml>
+<link rel=alternate type=application/json href=https://halimess.github.io/index.json>
+<meta property="og:title" content="halimess 개발 블로그">
+<meta property="og:description" content="내가 보려고 작성한 글">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://halimess.github.io/"><meta property="og:site_name" content="아무 글">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="halimess 개발 블로그">
+<meta name=twitter:description content="내가 보려고 작성한 글">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"Organization","name":"halimess 개발 블로그","url":"https://halimess.github.io/","description":"내가 보려고 작성한 글","thumbnailUrl":"https://halimess.github.io/favicon.ico","sameAs":[]}</script>
+</head>
+<body class=list id=top>
+<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
+<noscript>
+<style type=text/css>#theme-toggle,.top-link{display:none}</style>
+<style>@media(prefers-color-scheme:dark){:root{--theme:#1d1e20;--entry:#2e2e33;--primary:rgba(255, 255, 255, 0.84);--secondary:rgba(255, 255, 255, 0.56);--tertiary:rgba(255, 255, 255, 0.16);--content:rgba(255, 255, 255, 0.74);--hljs-bg:#2e2e33;--code-bg:#37383e;--border:#333}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
+</noscript>
+<header class=header>
+<nav class=nav>
+<div class=logo>
+<a href=https://halimess.github.io/ accesskey=h title="halimess (Alt + H)">halimess</a>
+<span class=logo-switches>
+<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</button>
+</span>
+</div>
+<ul id=menu onscroll=menu_on_scroll()>
+<li>
+<a href=https://halimess.github.io/archives/ title=Archive>
+<span>Archive</span>
+</a>
+</li>
+<li>
+<a href=https://halimess.github.io/search/ title="Search (Alt + /)" accesskey=/>
+<span>Search</span>
+</a>
+</li>
+<li>
+<a href=https://halimess.github.io/tags/ title=Tags>
+<span>Tags</span>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+<main class=main>
+<article class=first-entry>
+<header class=entry-header>
+<h2>AWS VPC 이론 공부</h2>
+</header>
+<section class=entry-content>
+<p>이 문서는 유튜브 강의 AWS VPC 상세히 알아보기를 공부하며 작성한 내용을 포함합니다.
+AWS VPC는 사용자가 정의한 가상 네트워크
+Region에 종속적임
+AWS VPC 구성 요소
+subnet : VPC를 특정 범위로 나눔 RouteTable : 네트워크 트래픽 라우팅 테이블 Internet GW : VPC의 리소스에서 인터넷 통신을 활성하기 위한 게이트웨이 NAT GW : 네트워크 주소 변환을 통해 private subnet 에서 인터넷 통신을 연결하는 게이트웨이 VPC Endpoint : NAT, IGW 등을 통하지 않고 AWS 서비스를 비공개로 연결 가능케하는 서비스 subnet...</p>
+</section>
+<footer class=entry-footer>September 14, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;halimess</footer>
+<a class=entry-link aria-label="post link to AWS VPC 이론 공부" href=https://halimess.github.io/posts/aws/vpc/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>책 내용 정리: Clean Architecture</h2>
+</header>
+<section class=entry-content>
+<p>소개 1장. 설계와 아키텍처란? 설계랑 아키텍처는 같은 말이다.
+아키텍처는 고수준의 무언가, 설계는 저수준의 구조 혹은 결정사항을 의미할 때가 많지만, 이러한 구분은 무의미 저수준의 세부사항과 고수준의 구조는 소프트웨어 전체 설계의 구성 요소 고수준 -> 저수준으로 향하는 의사결정의 연속성만이 있을 뿐 소프트웨어 아키텍처의 목표 필요한 시스템을 만들고 유지보수하는 데 투입되는 인력을 최소화 즉, 설계 품질의 척도는 요구 사항을 만족시키는 데 드는 비용을 재는 척도 엉망진창이 되어가는 신호 시스템을 급하게 만들거나 결과물의 총량을 순전히 프로그래머 수만으로 결정하거나 코드와 설계의 구조를 깔끔하게 만들려는 생각을 전혀하지 않으면 파국이다…...</p>
+</section>
+<footer class=entry-footer>April 28, 2021&nbsp;·&nbsp;5 min&nbsp;·&nbsp;halimess</footer>
+<a class=entry-link aria-label="post link to 책 내용 정리: Clean Architecture" href=https://halimess.github.io/posts/cleanarchitecture/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>개발 블로그 시작</h2>
+</header>
+<section class=entry-content>
+<p>개발 블로그를 만들었다!
 Hugo 기반에 PaperMod theme을 적용해보았다.
 Hugo는 go 언어로 만들어진 정적 사이트를 쉽게 만들어 주는 도구이다. 기본 설정 이후에는 markdown으로 블로그 글을 포스팅할 수 있다.
 Github/Gitlab Pages, Amazon S3, Heroku 등 거의 모든 배포 도구로 배포할 수 있다.
-꾸준히 작성하여 나의 개발 자산을 늘리자! 😃</p></section><footer class=entry-footer>April 13, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;halimess</footer><a class=entry-link aria-label="post link to 개발 블로그 시작" href=https://halimess.github.io/posts/firstpage/></a></article></main><footer class=footer><span>&copy; 2021 <a href=https://halimess.github.io/>halimess 개발 블로그</a></span>
+꾸준히 작성하여 나의 개발 자산을 늘리자! 😃</p>
+</section>
+<footer class=entry-footer>April 13, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;halimess</footer>
+<a class=entry-link aria-label="post link to 개발 블로그 시작" href=https://halimess.github.io/posts/firstpage/></a>
+</article>
+</main>
+<footer class=footer>
+<span>&copy; 2021 <a href=https://halimess.github.io/>halimess 개발 블로그</a></span>
 <span>&#183;</span>
 <span>Powered by <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a></span>
 <span>&#183;</span>
-<span>Theme <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)"><button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></button></a>
-<script>window.onload=function(){localStorage.getItem("menu-scroll-position")&&(document.getElementById('menu').scrollLeft=localStorage.getItem("menu-scroll-position"))};function menu_on_scroll(){localStorage.setItem("menu-scroll-position",document.getElementById('menu').scrollLeft)}document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script></body></html>
+<span>Theme <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a></span>
+</footer>
+<a href=#top aria-label="go to top" title="Go to Top (Alt + G)">
+<button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</button>
+</a>
+<script>window.onload=function(){localStorage.getItem("menu-scroll-position")&&(document.getElementById('menu').scrollLeft=localStorage.getItem("menu-scroll-position"))};function menu_on_scroll(){localStorage.setItem("menu-scroll-position",document.getElementById('menu').scrollLeft)}document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
+<script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
+<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
+</body>
+</html>
