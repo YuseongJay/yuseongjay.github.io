@@ -5,7 +5,7 @@
 <meta name=robots content="index, follow">
 <title>AWS VPC 이론 공부 | halimess 개발 블로그</title>
 <meta name=keywords content="aws,vpc,이론">
-<meta name=description content="Desc Text.">
+<meta name=description content="AWS VPC를 알아보자">
 <meta name=author content="halimess">
 <link rel=canonical href=https://halimess.github.io/posts/aws/vpc/>
 <link crossorigin=anonymous href=/assets/css/stylesheet.min.b15591da31b4f827d6dc0b97cf931d21b01610305321ac220bf755cf6aade94e.css integrity="sha256-sVWR2jG0+CfW3AuXz5MdIbAWEDBTIawiC/dVz2qt6U4=" rel="preload stylesheet" as=style>
@@ -19,16 +19,16 @@
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.88.1">
 <meta property="og:title" content="AWS VPC 이론 공부">
-<meta property="og:description" content="Desc Text.">
+<meta property="og:description" content="AWS VPC를 알아보자">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://halimess.github.io/posts/aws/vpc/"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2021-09-14T14:56:08+00:00">
 <meta property="article:modified_time" content="2021-09-14T14:56:08+00:00"><meta property="og:site_name" content="아무 글">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="AWS VPC 이론 공부">
-<meta name=twitter:description content="Desc Text.">
+<meta name=twitter:description content="AWS VPC를 알아보자">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://halimess.github.io/posts/"},{"@type":"ListItem","position":2,"name":"AWS VPC 이론 공부","item":"https://halimess.github.io/posts/aws/vpc/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"AWS VPC 이론 공부","name":"AWS VPC 이론 공부","description":"Desc Text.","keywords":["aws","vpc","이론"],"articleBody":"이 문서는 유튜브 강의 AWS VPC 상세히 알아보기를 공부하며 작성한 내용을 포함합니다.\nAWS VPC는 사용자가 정의한 가상 네트워크\n Region에 종속적임\n AWS VPC 구성 요소\n subnet : VPC를 특정 범위로 나눔 RouteTable : 네트워크 트래픽 라우팅 테이블 Internet GW : VPC의 리소스에서 인터넷 통신을 활성하기 위한 게이트웨이 NAT GW : 네트워크 주소 변환을 통해 private subnet 에서 인터넷 통신을 연결하는 게이트웨이 VPC Endpoint : NAT, IGW 등을 통하지 않고 AWS 서비스를 비공개로 연결 가능케하는 서비스  subnet\n AZ에 종속적 AZ는 3개 이상 사용하는 것을 권장\n subnet을 설정하는 best practices\n AZ마다 public subnet, private subnet 생성 public subnet에는 bastion 위치 그 외 대부분 서비스는 private subnet에 위치 요즘엔 서비스 구별에 따라 private subnet을 여러 개 만들지 않는 추세라고 함 subnet 내 서비스들의 IP 를 설정하지 않도록 설계  autoscaling 등을 위함    ","wordCount":"127","inLanguage":"en","datePublished":"2021-09-14T14:56:08Z","dateModified":"2021-09-14T14:56:08Z","author":{"@type":"Person","name":"halimess"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://halimess.github.io/posts/aws/vpc/"},"publisher":{"@type":"Organization","name":"halimess 개발 블로그","logo":{"@type":"ImageObject","url":"https://halimess.github.io/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"AWS VPC 이론 공부","name":"AWS VPC 이론 공부","description":"AWS VPC를 알아보자","keywords":["aws","vpc","이론"],"articleBody":"이 문서는 유튜브 강의 AWS VPC 상세히 알아보기를 공부하며 작성한 내용을 포함합니다.\nAWS VPC는 사용자가 정의한 가상 네트워크  Region에 종속적임\n AWS VPC 구성 요소  subnet : VPC를 특정 범위로 나눔 RouteTable : 네트워크 트래픽 라우팅 테이블 Internet GW : VPC의 리소스에서 인터넷 통신을 활성하기 위한 게이트웨이 NAT GW : 네트워크 주소 변환을 통해 private subnet 에서 인터넷 통신을 연결하는 게이트웨이 VPC Endpoint : NAT, IGW 등을 통하지 않고 AWS 서비스를 비공개로 연결 가능케하는 서비스  subnet  AZ에 종속적이고 AZ는 3개 이상 사용하는 것을 권장\n subnet을 설정하는 best practices  AZ마다 public subnet, private subnet 생성  public subnet 들을 총괄하는 RouteTable 추가 private subnet 마다 NAT GW 추가   public subnet에는 bastion 위치 그 외 대부분 서비스는 private subnet에 위치 요즘엔 서비스 구별에 따라 private subnet을 여러 개 만들지 않는 추세라고 함 subnet 내 서비스들의 IP 를 설정하지 않도록 설계  autoscaling 등을 위함    ","wordCount":"139","inLanguage":"en","datePublished":"2021-09-14T14:56:08Z","dateModified":"2021-09-14T14:56:08Z","author":{"@type":"Person","name":"halimess"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://halimess.github.io/posts/aws/vpc/"},"publisher":{"@type":"Organization","name":"halimess 개발 블로그","logo":{"@type":"ImageObject","url":"https://halimess.github.io/favicon.ico"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -72,7 +72,7 @@
 AWS VPC 이론 공부
 </h1>
 <div class=post-description>
-Desc Text.
+AWS VPC를 알아보자
 </div>
 <div class=post-meta>September 14, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;halimess
 </div>
@@ -81,16 +81,28 @@ Desc Text.
 <summary accesskey=c title="(Alt + C)">
 <div class=details>Table of Contents</div>
 </summary>
-<div class=inner>
+<div class=inner><ul>
+<li>
+<a href=#aws-vpc%eb%8a%94-%ec%82%ac%ec%9a%a9%ec%9e%90%ea%b0%80-%ec%a0%95%ec%9d%98%ed%95%9c-%ea%b0%80%ec%83%81-%eb%84%a4%ed%8a%b8%ec%9b%8c%ed%81%ac aria-label="AWS VPC는 사용자가 정의한 가상 네트워크">AWS VPC는 사용자가 정의한 가상 네트워크</a><ul>
+<li>
+<a href=#aws-vpc-%ea%b5%ac%ec%84%b1-%ec%9a%94%ec%86%8c aria-label="AWS VPC 구성 요소">AWS VPC 구성 요소</a></li>
+<li>
+<a href=#subnet aria-label=subnet>subnet</a></li>
+<li>
+<a href=#subnet%ec%9d%84-%ec%84%a4%ec%a0%95%ed%95%98%eb%8a%94-best-practices aria-label="subnet을 설정하는 best practices">subnet을 설정하는 best practices</a>
+</li>
+</ul>
+</li>
+</ul>
 </div>
 </details>
 </div>
 <div class=post-content><p>이 문서는 유튜브 강의 <a href="https://www.youtube.com/watch?v=ZISUSL431bY">AWS VPC 상세히 알아보기</a>를 공부하며 작성한 내용을 포함합니다.</p>
-<p>AWS VPC는 사용자가 정의한 가상 네트워크</p>
+<h2 id=aws-vpc는-사용자가-정의한-가상-네트워크>AWS VPC는 사용자가 정의한 가상 네트워크<a hidden class=anchor aria-hidden=true href=#aws-vpc는-사용자가-정의한-가상-네트워크>#</a></h2>
 <blockquote>
 <p>Region에 종속적임</p>
 </blockquote>
-<p>AWS VPC 구성 요소</p>
+<h3 id=aws-vpc-구성-요소>AWS VPC 구성 요소<a hidden class=anchor aria-hidden=true href=#aws-vpc-구성-요소>#</a></h3>
 <ul>
 <li>subnet : VPC를 특정 범위로 나눔</li>
 <li>RouteTable : 네트워크 트래픽 라우팅 테이블</li>
@@ -98,14 +110,19 @@ Desc Text.
 <li>NAT GW : 네트워크 주소 변환을 통해 private subnet 에서 인터넷 통신을 연결하는 게이트웨이</li>
 <li>VPC Endpoint : NAT, IGW 등을 통하지 않고 AWS 서비스를 비공개로 연결 가능케하는 서비스</li>
 </ul>
-<p>subnet</p>
+<h3 id=subnet>subnet<a hidden class=anchor aria-hidden=true href=#subnet>#</a></h3>
 <blockquote>
-<p>AZ에 종속적
+<p>AZ에 종속적이고
 AZ는 3개 이상 사용하는 것을 권장</p>
 </blockquote>
-<p>subnet을 설정하는 best practices</p>
+<h3 id=subnet을-설정하는-best-practices>subnet을 설정하는 best practices<a hidden class=anchor aria-hidden=true href=#subnet을-설정하는-best-practices>#</a></h3>
 <ul>
-<li>AZ마다 public subnet, private subnet 생성</li>
+<li>AZ마다 public subnet, private subnet 생성
+<ul>
+<li>public subnet 들을 총괄하는 RouteTable 추가</li>
+<li>private subnet 마다 NAT GW 추가</li>
+</ul>
+</li>
 <li>public subnet에는 bastion 위치</li>
 <li>그 외 대부분 서비스는 private subnet에 위치</li>
 <li>요즘엔 서비스 구별에 따라 private subnet을 여러 개 만들지 않는 추세라고 함</li>
