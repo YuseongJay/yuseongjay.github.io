@@ -47,7 +47,7 @@ ShowPostNavLinks: true
 
 ### subnet
 > AZ에 종속적이고 
-> AZ는 3개 이상 사용하는 것을 권장
+> AZ는 3개 이상 사용하는 것을 권장한다고 함.
 
 ### subnet을 설정하는 best practices
 * AZ마다 public subnet, private subnet 생성
