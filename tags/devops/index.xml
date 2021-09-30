@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>devops on halimess 개발 블로그</title>
+    <link>https://halimess.github.io/tags/devops/</link>
+    <description>Recent content in devops on halimess 개발 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Sep 2021 19:35:09 +0000</lastBuildDate><atom:link href="https://halimess.github.io/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>리눅스 기초 명령어 top 10</title>
+      <link>https://halimess.github.io/posts/linux/mustknowcommand/</link>
+      <pubDate>Tue, 28 Sep 2021 19:35:09 +0000</pubDate>
+      
+      <guid>https://halimess.github.io/posts/linux/mustknowcommand/</guid>
+      <description>유튜브 영상, &amp;#39;신입 or Jr. 엔지니어를 위한 리눅스 명령어 Top 10&amp;#39;를 보고 공부하여 정리한 내용</description>
+    </item>
+    
+  </channel>
+</rss>
